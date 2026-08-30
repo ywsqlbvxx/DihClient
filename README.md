@@ -1,4 +1,4 @@
-# Rise 6.9.5 but... OpenSource
+# DIHHHHH (rice 6.9.5)
 
 
 <p align="center">
@@ -14,8 +14,8 @@
 
 ## requirements
 
-- JDK 21 or newer
-- highiq
+- JDK 21+
+- betteh IQ
 
 ## modify
 
@@ -62,16 +62,12 @@ all default to off.
 | `-Drise.net.altservice=true` | alt-account service |
 | `-Drise.net.versioncheck=true` | update gate on the login screen |
 
-## join us
+## 67
 
-> this source code was generated via decompilation and may contain minor behavioral discrepancies or bugs. Although we have worked hard to fix them, 100% accuracy cannot be guaranteed.  
-> 
-> Contributions and bug reports are welcome—please feel free to open an **Issue** or submit a **PR**!
-
-## thx
+## kk
 
 - **original obfuscated client:** RiseClient 6.9.5
-- **some deobfuscation, symbol recovery:** completed by Claude™ and Codex™ under human supervision (billionaires should be covering my token costs)
+- **some deobfuscation, symbol recovery:** completed by Claude™ and Codex™ under human supervision
 - **devirtualization, flowdeobf, deobf tool:** anonymous™
 - **Java Deobfuscator**
 - **Recaf**
@@ -87,3 +83,5 @@ all default to off.
 - **Minecraft Trademarks:** *Minecraft* is a trademark of Mojang Studios / Microsoft Corporation.  
 - **Affiliation:** This project is an independent community development and is **NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.**  
 - **Assets & Code:** No proprietary Minecraft assets or un-obfuscated original Mojang source code are distributed directly within this repository. (All game assets belong to their respective owners). 
+
+## Six Seven
