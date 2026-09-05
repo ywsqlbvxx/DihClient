@@ -1,7 +1,9 @@
 name: Compilador en la Nube DihClient
 
 on:
-  workflow_dispatch: # Activa el botón manual en GitHub
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
 
 jobs:
   build-rise:
@@ -18,13 +20,19 @@ jobs:
           distribution: 'zulu'
           java-version: '21'
 
-      - name: 3. Dar Permisos de Ejecución a Gradle
+      # DESCARGA ULTRA PREVIEW 2: Forzamos la descarga del instalador H8 Preview 2 para la 1.8.9
+      - name: 3. Inyectar OptiFine 1.8.9 Ultra Preview 2 en la Carpeta Libs
+        run: |
+          mkdir -p libs
+          wget -O libs/OptiFine_1.8.9_HD_U_M6_pre2.jar "https://github.com" || wget -O libs/OptiFine_1.8.9_HD_U_M6_pre2.jar "https://optifine.net"
+
+      - name: 4. Dar Permisos de Ejecución a Gradle
         run: chmod +x gradlew
 
-      - name: 4. Ejecutar Compilación Custom de Rise
+      - name: 5. Ejecutar Compilación Custom de Rise
         run: ./gradlew clientJar --no-daemon
 
-      - name: 5. Guardar Archivo Compilado (.JAR)
+      - name: 6. Guardar Archivo Compilado (.JAR)
         if: success()
         uses: actions/upload-artifact@v4
         with:
