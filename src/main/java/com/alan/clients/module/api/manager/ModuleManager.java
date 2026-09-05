@@ -27,6 +27,7 @@ import com.alan.clients.module.impl.exploit.LightningTracker;
 import com.alan.clients.module.impl.exploit.NoRotate;
 import com.alan.clients.module.impl.exploit.PingSpoof;
 import com.alan.clients.module.impl.exploit.StaffDetector;
+import com.alan.clients.module.impl.exploit.ViaFix;
 import com.alan.clients.module.impl.ghost.AimAssist;
 import com.alan.clients.module.impl.ghost.AimBacktrack;
 import com.alan.clients.module.impl.ghost.AutoClicker;
@@ -226,6 +227,7 @@ public class ModuleManager {
         this.register(NoRotate.class, new NoRotate());
         this.register(PingSpoof.class, new PingSpoof());
         this.register(StaffDetector.class, new StaffDetector());
+        this.register(ViaFix.class, new ViaFix());
         this.register(AimAssist.class, new AimAssist());
         this.register(AimBacktrack.class, new AimBacktrack());
         this.register(AutoClicker.class, new AutoClicker());
