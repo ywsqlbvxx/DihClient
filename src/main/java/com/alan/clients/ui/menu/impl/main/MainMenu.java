@@ -59,7 +59,7 @@ public final class MainMenu extends Menu {
                         FontManager.MAIN
                             .a(16, FontWeight.REGULAR)
                             .drawCenteredString(
-                                "Made with <3 by Alan and The_Bi11iona1re",
+                                "Made with <3 by Alan and The_Bi11iona1re (AND G9292 :D)",
                                 scaledresolution.getScaledWidth() - 5,
                                 scaledresolution.getScaledHeight() - 20,
                                 ColorUtil.withAlpha(aBS, 100).getRGB()
@@ -113,12 +113,12 @@ public final class MainMenu extends Menu {
         byte b1 = 6;
         int k = i - 90;
         int l = j - 12 - 3 - 12;
-        this.aCF = new MenuTextButton(k, l, short1, b0, () -> aEg.displayGuiScreen(new GuiSelectWorld(this)), "Singleplayer");
+        this.aCF = new MenuTextButton(k, l, short1, b0, () -> aEg.displayGuiScreen(new GuiSelectWorld(this)), "Local Worlds");
         this.aCG = new MenuTextButton(k, l + b0 + b1, short1, b0, () -> aEg.displayGuiScreen(new GuiMultiplayer(this)), "Multiplayer");
         this.aCH = new MenuTextButton(
-            k + short1 / 2 + b1 / 2, l + b0 * 2 + b1 * 2, short1 / 2 - b1 / 2, b0, () -> aEg.displayGuiScreen(new AccountManagerScreen(this)), "Alts"
+            k + short1 / 2 + b1 / 2, l + b0 * 2 + b1 * 2, short1 / 2 - b1 / 2, b0, () -> aEg.displayGuiScreen(new AccountManagerScreen(this)), "Account Manager"
         );
-        this.aCI = new MenuTextButton(k, l + b0 * 2 + b1 * 2, short1 / 2 - b1 / 2, b0, () -> aEg.displayGuiScreen(new GuiOptions(this, aEg.gameSettings)), "Options");
+        this.aCI = new MenuTextButton(k, l + b0 * 2 + b1 * 2, short1 / 2 - b1 / 2, b0, () -> aEg.displayGuiScreen(new GuiOptions(this, aEg.gameSettings)), "Game Settings");
         this.animation = new Animation(Easing.EASE_OUT_QUINT, 600L);
         this.menuButtons = new MenuButton[]{this.aCF, this.aCG, this.aCH, this.aCI};
     }
