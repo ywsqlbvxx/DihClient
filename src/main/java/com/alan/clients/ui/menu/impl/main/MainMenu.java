@@ -49,7 +49,7 @@ public final class MainMenu extends Menu {
             Font agc = FontManager.MAIN.a(64, FontWeight.REGULAR);
             double d0 = this.aCF.getY() - agc.height();
             this.animation.Q(d0);
-            String s = this.rice ? "Rice" : Client.b;
+            String s = this.rice ? "Dingling" : Client.b;
             double d1 = this.animation.getValue();
             Color color = ColorUtil.withAlpha(Color.WHITE, (int)(d1 / d0 * 200.0));
             this.b(ShaderQueueType.REGULAR)
