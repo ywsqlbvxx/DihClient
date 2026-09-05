@@ -1,0 +1,32 @@
+name: Compilador en la Nube DihClient
+
+on:
+  workflow_dispatch: # Esto activa un botón manual para compilar cuando tú quieras
+
+jobs:
+  build-client:
+    name: Compilar y Verificar Errores
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Descargar Código del Repositorio
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Entorno Java 8
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu' # Zulu es excelente para compatibilidad con MCP antiguos
+          java-version: '8'
+
+      - name: 3. Dar Permisos de Ejecución a Gradle
+        run: chmod +x gradlew
+
+      - name: 4. Compilar Proyecto con Gradle
+        run: ./gradlew build --no-daemon
+
+      - name: 5. Guardar Archivo Compilado (.JAR)
+        if: success() # Solo se ejecuta si la compilación no tuvo errores
+        uses: actions/upload-artifact@v4
+        with:
+          name: DihClient-Build-Exitosa
+          path: build/libs/*.jar
