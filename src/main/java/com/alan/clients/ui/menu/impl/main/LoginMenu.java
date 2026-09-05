@@ -231,7 +231,7 @@ extends Menu {
             this.animation.Q(d3);
             double d4 = this.animation.getValue();
             Color color = ColorUtil.withAlpha(Color.WHITE, (int)(d4 / d3 * 200.0));
-            this.aCu.drawString("Welcome", (float)this.width / 2.0f, d4 - 10.0, color.getRGB());
+            this.aCu.drawString("Welcome! Enter your Rise username below", (float)this.width / 2.0f, d4 - 10.0, color.getRGB());
             if (this.bN.T(3000L)) {
                 if (this.aCz) {
                     try {
@@ -247,8 +247,8 @@ extends Menu {
             } else if (this.jc != null) {
                 FontManager.MAIN.a(18, FontWeight.LIGHT).drawString(this.jc, (float)this.width / 2.0f, d4 + 26.0, Color.RED.getRGB());
             }
-            FontManager.MAIN.a(18, FontWeight.REGULAR).drawCenteredString("Made with <3 by Alan and The_Bi11iona1re", scaledResolution.getScaledWidth() - 5, scaledResolution.getScaledHeight() - 20, ColorUtil.withAlpha(aBS, 100).getRGB());
-            FontManager.MAIN.a(12, FontWeight.REGULAR).drawCenteredString("\u00a9 Rise Client 2026. All Rights Reserved", scaledResolution.getScaledWidth() - 5, scaledResolution.getScaledHeight() - 10, ColorUtil.withAlpha(aBS, 100).getRGB());
+            FontManager.MAIN.a(18, FontWeight.REGULAR).drawCenteredString("Alan wood Industries", scaledResolution.getScaledWidth() - 5, scaledResolution.getScaledHeight() - 20, ColorUtil.withAlpha(aBS, 100).getRGB());
+            FontManager.MAIN.a(12, FontWeight.REGULAR).drawCenteredString("\u00a9 totpk minecra hack", scaledResolution.getScaledWidth() - 5, scaledResolution.getScaledHeight() - 10, ColorUtil.withAlpha(aBS, 100).getRGB());
             this.fadeAnimation.Q(0.0);
             RenderUtil.d(0.0, 0.0, LoginMenu.aEg.displayWidth, LoginMenu.aEg.displayHeight, new Color(0, 0, 0, (int)this.fadeAnimation.getValue()));
         });
