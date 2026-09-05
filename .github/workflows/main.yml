@@ -1,4 +1,4 @@
-name: Builder en la Nube DihClient
+name: Compilador en la Nube DihClient
 
 on:
   workflow_dispatch: # Activa el botón manual en GitHub
@@ -25,7 +25,7 @@ jobs:
         run: ./gradlew clientJar --no-daemon
 
       - name: 5. Guardar Archivo Compilado (.JAR)
-        if: success() # Solo se ejecuta si no hubo errores de código
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: DihClient-Final
