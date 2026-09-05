@@ -5,7 +5,7 @@ on:
 
 jobs:
   build-rise:
-    name: Compilar Rise Client Custom
+    name: Compilar RiseClient Custom
     runs-on: ubuntu-latest
 
     steps:
