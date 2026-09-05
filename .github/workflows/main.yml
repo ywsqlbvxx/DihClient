@@ -20,8 +20,8 @@ jobs:
           distribution: 'zulu'
           java-version: '21'
 
-      # DESCARGA ULTRA PREVIEW 2: Forzamos la descarga del instalador H8 Preview 2 para la 1.8.9
-      - name: 3. Inyectar OptiFine 1.8.9 Ultra Preview 2 en la Carpeta Libs
+      # DESCARGA M6 PREVIEW 2: Forzamos la descarga del archivo exacto de OptiFine M6 Pre2
+      - name: 3. Inyectar OptiFine 1.8.9 M6 Pre2 en la Carpeta Libs
         run: |
           mkdir -p libs
           wget -O libs/OptiFine_1.8.9_HD_U_M6_pre2.jar "https://github.com" || wget -O libs/OptiFine_1.8.9_HD_U_M6_pre2.jar "https://optifine.net"
