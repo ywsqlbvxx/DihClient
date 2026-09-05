@@ -59,7 +59,7 @@ public final class MainMenu extends Menu {
                         FontManager.MAIN
                             .a(16, FontWeight.REGULAR)
                             .drawCenteredString(
-                                "Made with <3 by Alan and The_Bi11iona1re (AND G9292 :D)",
+                                "With love, by Alan, The_Bi11iona1re and yusolbvea <3",
                                 scaledresolution.getScaledWidth() - 5,
                                 scaledresolution.getScaledHeight() - 20,
                                 ColorUtil.withAlpha(aBS, 100).getRGB()
@@ -67,7 +67,7 @@ public final class MainMenu extends Menu {
                         FontManager.MAIN
                             .a(12, FontWeight.REGULAR)
                             .drawCenteredString(
-                                "© Rise Client 2026. All Rights Reserved",
+                                "© All rights reserved to Rise Client LLC.",
                                 scaledresolution.getScaledWidth() - 5,
                                 scaledresolution.getScaledHeight() - 10,
                                 ColorUtil.withAlpha(aBS, 100).getRGB()
