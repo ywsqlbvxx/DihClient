@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 1. Descargar Código del Repositorio
+      - name: 1. Descargar Código del Repositorio (Incluye la carpeta libs)
         uses: actions/checkout@v4
 
       - name: 2. Configurar Entorno Java 21 (Requerido por la Base)
@@ -20,19 +20,13 @@ jobs:
           distribution: 'zulu'
           java-version: '21'
 
-      # DESCARGA M6 PREVIEW 2: Forzamos la descarga del archivo exacto de OptiFine M6 Pre2
-      - name: 3. Inyectar OptiFine 1.8.9 M6 Pre2 en la Carpeta Libs
-        run: |
-          mkdir -p libs
-          wget -O libs/OptiFine_1.8.9_HD_U_M6_pre2.jar "https://github.com" || wget -O libs/OptiFine_1.8.9_HD_U_M6_pre2.jar "https://optifine.net"
-
-      - name: 4. Dar Permisos de Ejecución a Gradle
+      - name: 3. Dar Permisos de Ejecución a Gradle
         run: chmod +x gradlew
 
-      - name: 5. Ejecutar Compilación Custom de Rise
+      - name: 4. Ejecutar Compilación Custom de Rise
         run: ./gradlew clientJar --no-daemon
 
-      - name: 6. Guardar Archivo Compilado (.JAR)
+      - name: 5. Guardar Archivo Compilado (.JAR)
         if: success()
         uses: actions/upload-artifact@v4
         with:
