@@ -1,0 +1,32 @@
+name: Compilador en la Nube DihClient
+
+on:
+  workflow_dispatch: # Activa el botón manual en GitHub
+
+jobs:
+  build-rise:
+    name: Compilar Rise Client Custom
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Descargar Código del Repositorio
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Entorno Java 21 (Requerido por la Base)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '21'
+
+      - name: 3. Dar Permisos de Ejecución a Gradle
+        run: chmod +x gradlew
+
+      - name: 4. Ejecutar Compilación Custom de Rise
+        run: ./gradlew clientJar --no-daemon
+
+      - name: 5. Guardar Archivo Compilado (.JAR)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: DihClient-Final
+          path: build/dist/rise-client.jar
