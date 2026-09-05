@@ -1,4 +1,4 @@
-name: Compilador en la Nube DihClient
+name: Builder en la Nube DihClient
 
 on:
   workflow_dispatch: # Activa el botón manual en GitHub
