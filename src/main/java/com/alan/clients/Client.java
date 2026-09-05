@@ -287,7 +287,7 @@ public enum Client
         final String s = "6.9.5";
         final String s2 = "6";
         Client.$VALUES = E();
-        Client.b = "Rise";
+        Client.b = "Dih";
     }
 
     @Generated
