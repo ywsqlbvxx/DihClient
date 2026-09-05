@@ -1246,7 +1246,12 @@ public class KillAura extends Module {
                            } else {
                               this.jE = this.targets.get(0);
                               if (this.jE != null && !aEg.thePlayer.isDead) {
-                                 if (this.eX()) {
+                                 
+                                 // PARCHE VIAFIXER: Evaluamos si hay un objetivo legítimo a rango de escaneo
+                                 // Si el AutoBlock no está en "None", forzamos el bloqueo preventivo inmediatamente
+                                 if (!this.lV.wo().getName().equals("None")) {
+                                    this.updateAutoBlock();
+                                 } else if (this.eX()) {
                                     this.updateAutoBlock();
                                  } else {
                                     this.updateBlockForMode();
