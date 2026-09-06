@@ -145,8 +145,8 @@ tasks.register('clientJar', Jar) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from sourceSets.main.output
     from zipTree('libs/minecraft-deobf.jar')
+    from zipTree('libs/libraries.jar')
 }
-
 // source checks run on the documented build path, not only on `check`
 tasks.named('clientJar') { dependsOn 'reservedNames', 'staleLiterals', 'mixedBoxMerge' }
 
