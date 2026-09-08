@@ -1,4 +1,4 @@
-# DihClient (Also known as the best (baddest) Rice 6.9.5 latest fork)
+# DihClient (Aka. The best (trush) Rice 6.9.5 latest fork)
 
 
 <p align="center">
