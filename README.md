@@ -1,4 +1,4 @@
-# DIHHHHH (rice 6.9.5)
+# DihClient (Also known as the best (baddest) Rice 6.9.5 latest fork)
 
 
 <p align="center">
@@ -11,15 +11,18 @@
   <img src="./img/heavy.jpg" alt="4" width="20%" />
 </p>
 
+...
+
+Deobf?
 
 ## requirements
 
 - JDK 21+
-- betteh IQ
+- IQ with high
 
 ## modify
 
-full offline, deobf, rename, fix, patch auth, add toggle and more....
+full offline, almost deobfuscated, rebranded hghghghg, improved fixes, (patched security) no auth, add toggle??????? and moer ! !
 
 ## build
 
@@ -64,9 +67,11 @@ all default to off.
 
 ## 67
 
-## kk
+MMCMCCMCCMMCCMrdgvhydfviwsdwgdrg
 
-- **original obfuscated client:** RiseClient 6.9.5
+## KREDITS !!
+
+- **original obfuscated client:** RiseClient 6.9.5 Latest
 - **some deobfuscation, symbol recovery:** completed by Claude™ and Codex™ under human supervision
 - **devirtualization, flowdeobf, deobf tool:** anonymous™
 - **Java Deobfuscator**
