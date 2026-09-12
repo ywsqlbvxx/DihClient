@@ -922,7 +922,7 @@ public class KillAura extends Module {
          return var10000 != 0;
       });
       this.advancedFlickMax = new NumberValue("Advanced Flick Max", this, 29, 4, 60, 0.5, () -> (!this.rotationMode.wo().getName().equals("Advanced") ? 1 : -9 + 9) != 0);
-      this.advancedSwing = new BooleanValue("Advanced Swing", this, true, () -> !this.rotationMode.wo().getName().equals("Advanced"));
+      this.advancedSwing = new BooleanValue("Advanced Swing", this, true);
       this.advancedAimReaction = new NumberValue("Advanced Aim Reaction", this, 180, 30, 450, 5, () -> !this.rotationMode.wo().getName().equals("Advanced"));
       this.advancedAimReactionJitter = new NumberValue("Advanced Aim Reaction Jitter", this, 44, 0, 220, 1, () -> {
          boolean var10000;
